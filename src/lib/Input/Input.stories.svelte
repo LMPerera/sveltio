@@ -9,9 +9,10 @@
     argTypes={{
       backgroundColor: { control: "color" },
       state: {
-        control: { type: "select", options: ["active","success", "error","disabled"] },
+        control: { type: "select", options: ["active","success", "error"] },
       },
       onChange: { action: "onChange" },
+      disabled:{ control: "boolean" }
     }}
   />
   
@@ -45,8 +46,8 @@
   <Story
     name="Disabled"
     args={{
-      placeholder: "Text Input Disabled",
-      state: "disabled"
+      state: "disabled",
+      disabled:true
     }}
   />
   

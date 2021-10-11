@@ -4,6 +4,7 @@
 
     export let placeholder = '';
     export let label = '';
+    export let disabled = false;
   
     export let state = "active";
   
@@ -24,6 +25,7 @@
     {/if}
     
     <input
+    disabled={disabled}
     type="text"
     class={['sveltio-input',`sveltio-input--${state}`].join(' ')}
     placeholder={placeholder}

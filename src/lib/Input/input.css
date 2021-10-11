@@ -8,7 +8,7 @@
 	background-color: #ffffff;
 }
 
-.sveltio-input :focus {
+.sveltio-input ::focus {
 	border: solid 2px #1b116e;
 }
 
@@ -23,6 +23,10 @@
 .sveltio-input--disabled {
 	color: #e4e3ea;
 	border: solid 2px #e4e3ea;
+}
+
+.sveltio-input ::-webkit-input-placeholder {
+	color: red;
 }
 
 .sveltio-input-label {
