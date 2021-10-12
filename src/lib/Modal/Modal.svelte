@@ -1,5 +1,4 @@
 <script>
-    import './modal.css';
 	import { fly, fade } from 'svelte/transition';
 
 	export let isModalOpen = false;
@@ -42,3 +41,25 @@
 		<div on:click={closeModal} transition:fade class="sveltio-background" />
 	</div>
 {/if}
+
+<style>
+	.sveltio-modal-wrapper {
+	position: fixed;
+	inset: 100px 0;
+	min-width: 320px;
+	max-width: 530px;
+	margin: 0 auto;
+	width: 100%;
+	z-index: 1001;
+}
+
+.sveltio-background {
+	background: black;
+	cursor: pointer;
+	inset: 0;
+	opacity: 0.9;
+	position: fixed;
+	z-index: 1000;
+}
+
+</style>
